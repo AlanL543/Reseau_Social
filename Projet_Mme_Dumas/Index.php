@@ -1,9 +1,11 @@
 <?php
+session_start();
 class user {
 private $id;
 private $prenom;
 private $nom;
 private $photo;
+public $sessionid = session_id();
 
 function __construct($id, $prenom, $nom, $photo){
   $this->id = $id;
@@ -45,8 +47,11 @@ public function set_photo($photo) {
 public function nouveauMembre() {
   $membre = new user ($this->id, $this->prenom, $this->nom, $this->photo);
 }
-if $POST["prenom, nom, email, photo, Enregistrer"] {
-  
-}
+if $POST["Enregistrer"]
+  $membre->nouveauMembre()
+else
+  <script type="text/javascript">
+  alert(Formulaire incomplet, merci de renseigner les informations manquantes afin de créer votre compte ! );
+  </script>
 }
  ?>

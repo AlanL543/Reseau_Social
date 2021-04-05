@@ -22,4 +22,6 @@ if (session_status($sessionid) == PHP_SESSION_ACTIVE)
 else
   HorsLigne();
 
+
+
  ?>

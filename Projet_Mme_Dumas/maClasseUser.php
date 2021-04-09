@@ -2,7 +2,7 @@
 session_start();
 $dbo = new PDO('mysql:host=localhost;dbname=projet', root, root);
 class user {
-private $id = 0;
+public $id = 0;
 private $prenom;
 private $nom;
 private $photo;

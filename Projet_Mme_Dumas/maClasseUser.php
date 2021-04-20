@@ -12,7 +12,7 @@ function __construct($id, $prenom, $nom, $photo){
   $this->id = $id;
   $this->prenom = $prenom;
   $this->nom = $nom;
-  $this->$photo = $photo;
+  $this->photo = $photo;
 }
 
 protected function get_id() {

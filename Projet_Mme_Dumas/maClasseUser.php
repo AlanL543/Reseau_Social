@@ -1,12 +1,10 @@
 <?php
-session_start();
-$dbo = new PDO('mysql:host=localhost;dbname=projet', root, root);
 class user {
 public $id = 0;
 private $prenom;
 private $nom;
 private $photo;
-public $sessionid = session_id();
+//public $sessionid = session_id();
 
 function __construct($id, $prenom, $nom, $photo){
   $this->id = $id;
